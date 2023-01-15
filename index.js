@@ -46,3 +46,24 @@ else{
 }
 }
 document.getElementById("clickButtonOfAccordion").addEventListener("click", showText);
+
+
+// Timer 
+
+let seconds=0;
+let minutes=0;
+var showTime=()=>{
+
+  setInterval(()=>{
+    seconds++;
+    if(seconds >= 10){
+      seconds=0;
+      document.getElementById("timerText").innerText=minutes + ':'+ seconds;
+    }
+
+    document.getElementById("timerText").innerText=seconds;
+    },1000)
+}
+
+
+document.getElementById("clickTimer").addEventListener("click", showTime);

@@ -29,7 +29,25 @@
       background-position: 0% 0%;
   }
 }
-
+/* Navbar */
+.navbar{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 10vh;
+  align-items: center;
+}
+.navbar p,.links{
+  border: 2PX solid brown;
+  padding: 0px 10px;
+  letter-spacing: 1px;
+}
+.navbar a{
+  padding: 0px 10px;
+  text-decoration: none;
+  color: black;
+}
+/*-----------------------------------------------  */
 .header {
   border: 2px solid white;
   width: 400px;
@@ -67,11 +85,12 @@
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
 }
-.button-area button,.showTime button{
+.button-area button,.showTime button,.timer button{
    color: white;
    text-transform: uppercase  ;
    font-size: 10px;
    font-weight: 900;
+   white-space: nowrap;
     width: 80px;
     height: 30px;
     padding: 3px;
@@ -97,7 +116,7 @@
 }
 /* --ACCORDION-- */
 .accordion-text{
-  width: 80vw;
+  width: 50vw;
   background:wheat;
   border-radius: 12px;
   transition: 2s;
